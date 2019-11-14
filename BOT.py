@@ -15,8 +15,6 @@ bot.remove_command('help')
 @bot.event
 async def on_ready():
     print("MI STO AVVIANDO... ASPETTA")
-    print("Name: " + bot.user.name)
-    print("ID: " + bot.user.id)
     print("SONO ONLINE! E PRONTO A SPAMMARE")
  
 @bot.command(pass_context=True)
