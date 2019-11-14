@@ -23,9 +23,8 @@ async def spam(ctx):
     time.sleep(0)
     for i in range (0,10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000):
 
-        channel = message.channel
-        await channel.send("SPAWN")
-        await channel.send("POKEMONS ")
+        await ctx.send("SPAWN")
+        await ctx.send("POKEMONS ")
 
  
 bot.run (os.getenv("TOKEN"), bot=False)
