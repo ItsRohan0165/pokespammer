@@ -22,9 +22,10 @@ async def spam(ctx):
     await ctx.send("HERE WE GO!")
     time.sleep(0)
     for i in range (0,10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000):
-
-        await ctx.send("SPAWN")
-        await ctx.send("POKEMONS ")
+       
+        
+        await ctx.send("HBD")
+        await ctx.send("Bushido")
 
  
-bot.run (os.getenv("TOKEN"), bot=False)
+bot.run (os.getenv("TOKEN"))
