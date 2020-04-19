@@ -57,6 +57,16 @@ list = [
     "Soon you’re going to start a new year of your life and I hope this coming year will bring every success you deserve.Hope your birthday is as wonderful and extraordinary as you are"
 ]
 
+list2 = [
+    "https://cdn.discordapp.com/attachments/699538048945225778/701421463672061972/welcome.jpg",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701422691856678972/welcome_2.jpg",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701422711091494952/welcome4.jpg",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701422783178997870/welcome3.jpg",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701422915534585916/216510.gif",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701423366128533504/images_2.png",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701424064371097640/images_4.jpeg",
+    "https://cdn.discordapp.com/attachments/699538048945225778/701424218264305684/images_5.jpeg"
+]
 @bot.command(pass_context=True)
 async def wish(ctx,):
     await ctx.send("HERE WE GO!")
@@ -69,7 +79,20 @@ async def wish(ctx,):
         e.set_thumbnail(url="https://cdn.discordapp.com/attachments/699538048945225778/701411667313033226/black-calligraphy-happy-birthday-fireworks-wishes-animated-gif.gif")
         await ctx.send(embed=e)
         time.sleep(5)
+
+
+@bot.command(pass_context=True)
+async def welcome(ctx):
+    for i in range (0,10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000):
+
+        color_list = [c for c in colors.values()]
+        mop=random.choice(list2)
+        e = discord.Embed(title="**WELCOME TO THE CELEBRATION HALL** :partying_face::partying_face:", description=" ", color=random.choice(color_list))
+        e.set_image(url=f"{mop}")
+        await ctx.send(embed=e)
+        time.sleep(10)
         
+    
 
  
 bot.run(os.getenv('token'))
